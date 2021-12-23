@@ -2,10 +2,10 @@
 
 <samp>Assesment of Learning Performance Game Design 2021 - 2022 Gasal (Semester 3) Informatika Universitas Ciputra Surabaya.</samp>
 
-By The Dodge Master Team:
+By Dodge Master Team:
 <ul>    
     <li>
-        <a href="http://bit.ly/vanness-zhong-a">Vanness Zhong Anthony</a> (0706012010010) <a href="https://github.com/vanness7890">@vanness7890</a>
+        <a href="http://bit.ly/vanness-zhong-a">Vanness Zhong Anthony</a> (0706012010010) <a href="https://github.com/vannessza">@vannessza</a>
     </li>
     <li>
         <a href="http://bit.ly/nathanaelabel">Nathanael Abel Arianto</a> (0706012010029) <a href="https://github.com/nathanaelabel">@nathanaelabel</a>
@@ -15,4 +15,4 @@ By The Dodge Master Team:
     </li>
 </ul>
 
-<p><strong>Dodge-Master</strong> adalah game bergenre platformer dengan grafik dua dimensi yang berisi berbagai macam rintangan yang harus dilewati pemain agar bisa menyelesaikan objektif permainan.</p>
+<p><strong>Dodge Master</strong> adalah game bergenre platformer dengan grafik dua dimensi yang berisi berbagai macam rintangan yang harus dilewati pemain agar bisa menyelesaikan objektif permainan.</p>
