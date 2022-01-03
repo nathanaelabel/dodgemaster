@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Collectable
+  - Ground
+  - Enemies
+  - Rumah
   layers:
   - Default
   - TransparentFX
