@@ -16,7 +16,7 @@ public class Mouse : MonoBehaviour
     }
 
     // Update is called once per frame
-    // Agar Tikus bergerak horizontal maju - mundur (kiri - kanan)
+    //! Agar Tikus bergerak horizontal maju - mundur (kiri - kanan)
     void Update()
     {
         transform.position = startPos + transform.right * Mathf.Sin(Time.time + freq + offset) * magnitude;

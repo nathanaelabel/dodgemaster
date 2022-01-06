@@ -17,7 +17,7 @@ public class Enemies : MonoBehaviour
     }
 
     // Update is called once per frame
-    // Agar Elang bergerak vertikal atas bawah (terbang di udara)
+    //! Agar Elang bergerak vertikal atas bawah (terbang di udara)
     void Update()
     {
         transform.position = startPos + transform.up * Mathf.Sin(Time.time + freq + offset) * magnitude;

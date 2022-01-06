@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class Splashscreen : MonoBehaviour
 {
     // Start is called before the first frame update
-    // Mengatur durasi Splashscreen untuk tampil selama 3 detik
+    //! Mengatur durasi Splashscreen untuk tampil selama 3 detik
     public float time = 3f;
     void Start()
     {
@@ -14,7 +14,7 @@ public class Splashscreen : MonoBehaviour
     }
 
     // Update is called once per frame
-    // Pindahkan ke Menu Scene setelah Splashscreen selesai tampil
+    //! Pindahkan ke Menu Scene setelah Splashscreen selesai tampil
     void Update()
     {
         if (time > 0)

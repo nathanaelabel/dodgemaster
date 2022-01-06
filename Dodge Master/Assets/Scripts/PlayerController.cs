@@ -39,25 +39,25 @@ public class PlayerController : MonoBehaviour
         }
         float hDirection = Input.GetAxis("Horizontal");
 
-        // Jika menekan key A maka rigidbody bergerak ke kiri.
+        //! Jika menekan key A maka rigidbody bergerak ke kiri.
         // if(Input.GetKey(KeyCode.A)) -> switched key to using unity Input GetAxis.
         if (hDirection < 0)
         {
-            // bergerak ke kiri dengan speed 5.
+            //! bergerak ke kiri dengan speed 5.
             rb.velocity = new Vector2(-5, rb.velocity.y);
 
-            // flip sprite menghadap kiri saat menekan A.
+            //! flip sprite menghadap kiri saat menekan A.
             transform.localScale = new Vector2(-1, 1);
         }
 
-        // Jika menekan key D maka rigidbody bergerak ke kanan.
+        //! Jika menekan key D maka rigidbody bergerak ke kanan.
         // else if (Input.GetKey(KeyCode.D)) -> switched key to using unity Input GetAxis.
         else if (hDirection > 0)
         {
-            // bergerak ke kanan dengan speed 5.
+            //! bergerak ke kanan dengan speed 5.
             rb.velocity = new Vector2(5, rb.velocity.y);
 
-            // flip sprite menghadap kanan saat menekan D.
+            //! flip sprite menghadap kanan saat menekan D.
             transform.localScale = new Vector2(1, 1);
         } 
         else
@@ -65,7 +65,7 @@ public class PlayerController : MonoBehaviour
             //
         }
 
-        // Jika menekan key spasi maka rigidbody melompat keatas.
+        //! Jika menekan key spasi maka rigidbody melompat keatas.
         if (Input.GetButtonDown("Jump"))
         {
             if (isGrounded == true)
@@ -86,7 +86,7 @@ public class PlayerController : MonoBehaviour
         {
             if (rb.velocity.y < .1f)
             {
-                // Falling
+                //! Falling
                 state = State.falling;
             }
         }
@@ -106,13 +106,13 @@ public class PlayerController : MonoBehaviour
 
         else if (Mathf.Abs(rb.velocity.x) > 2f)
         {
-            // Moving
+            //! Moving
             state = State.running;
         }
 
         else
         {
-            // Idling
+            //! Idling
             state = State.idle;
         }
 
@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Mendeteksi posisi karakter jika telah menyentuh tanah setelah melompat (agar melompat hanya 1x tiap klik key Space)
+        //! Mendeteksi posisi karakter jika telah menyentuh tanah setelah melompat (agar melompat hanya 1x tiap klik key Space)
         if (collision.gameObject.CompareTag("Ground"))
         {
             if (isGrounded == false)
@@ -129,7 +129,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        // Skor +10 tiap menyentuh objek Cherry
+        //! Skor +10 setiap menyentuh objek Cherry
         if (collision.gameObject.CompareTag("Collectable"))
         {
             Destroy(collision.gameObject);
@@ -137,17 +137,17 @@ public class PlayerController : MonoBehaviour
             ScoreTxt.text = "Score: " + Score.ToString();
         }
 
-        // Game Over setiap menabrak musuh sebagai objek rintangan (Elang / Tikus / Duri)
+        //! Game Over setiap menabrak musuh sebagai objek rintangan (Elang / Tikus / Duri)
         if (collision.gameObject.CompareTag("Enemies"))
         {
             isAlive = false;
             panelGameOver.SetActive(true);
         }
 
-        // Naik ke Level 2 setiap mencapai Portal berupa Rumah di ujung kanan Map
+        //! Naik ke Level 2 setiap mencapai Portal berupa Rumah di ujung kanan Map
         if (collision.gameObject.CompareTag("Rumah"))
         {
-            SceneManager.LoadScene("Level2");
+            SceneManager.LoadScene("EndGame");
         }
     }
 }

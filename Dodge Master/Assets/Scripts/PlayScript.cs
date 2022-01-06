@@ -17,13 +17,19 @@ public class PlayScript : MonoBehaviour
         
     }
     
-    // Pindahkan ke Main Scene untuk bermain Level 1
-    public void startGame()
+    //! Pindahkan ke scene Level Easy
+    public void easyGame()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("LevelEasy");
     }
 
-    // Keluar dari aplikasi
+    //! Pindahkan ke scene Level Hard
+    public void hardGame()
+    {
+        SceneManager.LoadScene("LevelHard");
+    }
+
+    //! Keluar dari aplikasi
     public void Exit()
     {
         Application.Quit();
