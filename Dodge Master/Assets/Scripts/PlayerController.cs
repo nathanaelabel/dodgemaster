@@ -143,7 +143,9 @@ public class PlayerController : MonoBehaviour
         //! Skor +10 setiap menyentuh objek Cherry
         if (collision.gameObject.CompareTag("Collectable"))
         {
+            //! Hilangkan objek Cherry yang telah disentuh
             Destroy(collision.gameObject);
+            //! Tambahkan skor +10 setiap 1x objek Cherry didapat
             Score += 10;
             ScoreTxt.text = "Score: " + Score.ToString();
             Cherry.Play();
@@ -152,20 +154,43 @@ public class PlayerController : MonoBehaviour
         //! Game Over setiap menabrak musuh sebagai objek rintangan (Elang / Tikus / Duri)
         if (collision.gameObject.CompareTag("Enemies"))
         {
+            //! Stop Background Music Playing Game
             bgSong.Stop();
+            //! Play Background Music Game Over
             Dead.Play();
+            //! Nyawa habis
             isAlive = false;
+            //! Munculkan Panel Game Over
             panelGameOver.SetActive(true);
-            //! Untuk mengetahui user baru saja bermain di Level mana
+            //! Untuk mengetahui bahwa baru saja bermain di Level Easy, komparasi nilai tertingginya
             if (SceneManager.GetActiveScene().name == "LevelEasy")
             {
                 global.setSkorEasy(getPlayerScore());
             }
+            //! Untuk mengetahui bahwa baru saja bermain di Level Hard, komparasi nilai tertingginya
+            else if(SceneManager.GetActiveScene().name == "LevelHard")
+            {
+                global.setSkorHard(getPlayerScore());
+            }
         }
 
-        //! Naik ke Level 2 setiap mencapai Portal berupa Rumah di ujung kanan Map
+        //! Menang setiap mencapai Rumah di ujung kanan Map
         if (collision.gameObject.CompareTag("Rumah"))
         {
+            //! Stop Background Music Playing Game
+            bgSong.Stop();
+
+            //! Untuk mengetahui bahwa baru saja bermain di Level Easy, komparasi nilai tertingginya
+            if (SceneManager.GetActiveScene().name == "LevelEasy")
+            {
+                global.setSkorEasy(getPlayerScore());
+            }
+            //! Untuk mengetahui bahwa baru saja bermain di Level Hard, komparasi nilai tertingginya
+            else if (SceneManager.GetActiveScene().name == "LevelHard")
+            {
+                global.setSkorHard(getPlayerScore());
+            }
+
             SceneManager.LoadScene("EndGame");
         }
     }

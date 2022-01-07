@@ -18,6 +18,7 @@ public class GlobalVariable : MonoBehaviour
         return SkorHard;
     }
 
+    //! Jika ada skor yang lebih tinggi, maka perbarui value nya di TextMeshPro 'Highscore' Easy pada Menu
     public void setSkorEasy(int newSkorEasy)
     {
         if (SkorEasy < newSkorEasy)
@@ -27,6 +28,7 @@ public class GlobalVariable : MonoBehaviour
 
     }
 
+    //! Jika ada skor yang lebih tinggi, maka perbarui value nya di TextMeshPro 'Highscore' Hard pada Menu
     public void setSkorHard(int newSkorHard)
     {
         if (SkorHard < newSkorHard)

@@ -17,11 +17,19 @@ public class GameOverScript : MonoBehaviour
         
     }
 
+    //! Play Again (Pindahkan ke scene Level Easy)
     public void Play1()
     {
         SceneManager.LoadScene(2);
     }
 
+    //! Play Again (Pindahkan ke scene Level Hard)
+    public void Play2()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    //! Menu (Pindahkan ke scene Menu)
     public void Menu()
     {
         SceneManager.LoadScene(1);

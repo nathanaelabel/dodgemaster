@@ -15,9 +15,9 @@ public class EndGame : MonoBehaviour
 
     }
 
-    //! Pindahkan ke scene Menu
-    public void endGame()
+    //! Menu (Pindahkan ke scene Menu)
+    public void Menu()
     {
-        SceneManager.LoadScene("Menu");
+        SceneManager.LoadScene(1);
     }
 }
