@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: Dodge Master
   productName: Dodge Master
-  defaultCursor: {fileID: 2800000, guid: 6fc8adcbce9a2254dad7882233bc898e, type: 3}
+  defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.2784314, g: 0.2784314, b: 0.2784314, a: 1}
   m_ShowUnitySplashScreen: 1
