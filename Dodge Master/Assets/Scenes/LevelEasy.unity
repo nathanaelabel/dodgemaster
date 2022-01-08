@@ -794,8 +794,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1212780281193480880, guid: eb42dc9485b439f4e8f06818bedeee36, type: 3}
   m_PrefabInstance: {fileID: 455938916}
   m_PrefabAsset: {fileID: 0}
---- !u!19719996 &455938918
-TilemapCollider2D:
+--- !u!61 &455938918
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -808,8 +808,18 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.36, y: 0.28}
+    newSize: {x: 0.36, y: 0.28}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.36, y: 0.28}
+  m_EdgeRadius: 0
 --- !u!1839735485 &455938919
 Tilemap:
   m_ObjectHideFlags: 0
@@ -46812,8 +46822,8 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2990766643275486603, guid: ef2c4ab64637e41468de9b90673bbb72, type: 3}
   m_PrefabInstance: {fileID: 1393066159}
   m_PrefabAsset: {fileID: 0}
---- !u!19719996 &1393066161
-TilemapCollider2D:
+--- !u!61 &1393066161
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -46826,8 +46836,18 @@ TilemapCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_MaximumTileChangeCount: 1000
-  m_ExtrusionFactor: 0.00001
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.4, y: 0.41}
+    newSize: {x: 0.4, y: 0.41}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.4, y: 0.41}
+  m_EdgeRadius: 0
 --- !u!1839735485 &1393066162
 Tilemap:
   m_ObjectHideFlags: 0
