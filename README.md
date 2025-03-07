@@ -1,18 +1,36 @@
-# Dodge Master 2D Platformer Game
+# Dodge Master  
 
-<samp>Assesment of Learning Performance Game Design 2021 - 2022 Gasal (Semester 3) Informatika Universitas Ciputra Surabaya.</samp>
+**2D platformer game** where players must overcome various obstacles to complete objectives.  
 
-By Dodge Master Team:
-<ul>    
-    <li>
-        <a href="http://bit.ly/vanness-zhong-a">Vanness Zhong Anthony</a> (0706012010010) <a href="https://github.com/vannessza">@vannessza</a>
-    </li>
-    <li>
-        <a href="http://bit.ly/nathanaelabel">Nathanael Abel Arianto</a> (0706012010029) <a href="https://github.com/nathanaelabel">@nathanaelabel</a>
-    </li>
-    <li>
-        <a href="https://s.id/cahyaa">Probo Krishnacahya</a> (0706012010039) <a href="https://github.com/cahyaa02">@cahyaa02</a>
-    </li>
-</ul>
+---
 
-<p><strong>Dodge Master</strong> adalah game bergenre platformer dengan grafik dua dimensi yang berisi berbagai macam rintangan yang harus dilewati pemain agar bisa menyelesaikan objektif permainan.</p>
+## 🧑‍💻 Developed for  
+Assessment of Learning Performance – **Game Design** (2021/2022, Odd Semester).  
+
+---
+
+## 🎮 About the Game  
+**Dodge-Master** is a **2D platformer** featuring challenging obstacles that players must dodge and overcome to reach their goal. Designed as a **game design project**, this game tests agility, precision, and strategic movement.  
+
+Developed by **Dodge Master Team**:  
+- Nathanael Abel Arianto
+- Probo Krishnacahya
+- Vanness Zhong Anthony   
+
+---
+
+## 🛠️ Technologies Used  
+- **Game Engine:** Unity 
+- **Programming Language:** C# 
+- **Development Tools:** Microsoft Visual Studio 
+
+---
+
+## 🚀 Features  
+- **2D platformer gameplay** with increasing difficulty  
+- **Various obstacles** requiring skillful dodging  
+- **Engaging level design** for a fun and challenging experience  
+
+---
+
+📌 **Note:** This project was built for academic purposes and is no longer being actively developed.  
